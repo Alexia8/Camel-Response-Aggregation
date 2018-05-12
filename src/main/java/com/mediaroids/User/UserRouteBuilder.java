@@ -12,12 +12,6 @@ public class UserRouteBuilder extends RouteBuilder {
      * Let's configure the Camel routing rules using Java code...
      */
 
-    protected JndiRegistry createRegistry() throws Exception {
-        JndiRegistry jndi = new JndiRegistry();
-        jndi.bind("urlRewrite", new UserUrlRewrite());
-        return jndi;
-    }
-
     public void configure() {
 
         restConfiguration()
@@ -34,13 +28,6 @@ public class UserRouteBuilder extends RouteBuilder {
 
         from("direct:getUsers")
                 .to("http://localhost:13761/api/users/?bridgeEndpoint=true");
-
-
-        from("direct:getUser")
-                .multicast(new UserAggregationStrategy())
-                .parallelProcessing().enrich("direct:getUserData").enrich("direct:getUserRecommendation").end();
-
-                //.to("direct:getUserRecommendation", "direct:getUserData").end().to("direct:userData");
 
 
         from("direct:getUserData")

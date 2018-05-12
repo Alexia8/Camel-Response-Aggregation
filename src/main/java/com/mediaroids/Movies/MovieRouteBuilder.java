@@ -1,7 +1,6 @@
 package com.mediaroids.Movies;
 
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.impl.JndiRegistry;
 
 /**
  * A Camel Java DSL Router
@@ -12,11 +11,6 @@ public class MovieRouteBuilder extends RouteBuilder {
      * Let's configure the Camel routing rules using Java code...
      */
 
-    protected JndiRegistry createRegistry() throws Exception {
-        JndiRegistry jndi = new JndiRegistry();
-        jndi.bind("urlRewrite", new MoviesUrlRewrite());
-        return jndi;
-    }
 
     public void configure() {
 

@@ -1,5 +1,6 @@
 package com.mediaroids.TvShows;
 
+import com.mediaroids.Shared.CustomUrlRewrite;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.JndiRegistry;
 
@@ -11,12 +12,6 @@ public class TvShowRouteBuilder extends RouteBuilder {
     /**
      * Let's configure the Camel routing rules using Java code...
      */
-
-    protected JndiRegistry createRegistry() throws Exception {
-        JndiRegistry jndi = new JndiRegistry();
-        jndi.bind("urlRewrite", new TvShowsUrlRewrite());
-        return jndi;
-    }
 
     public void configure() {
 
@@ -36,16 +31,9 @@ public class TvShowRouteBuilder extends RouteBuilder {
                 .to("http://localhost:13761/api/tvShows/?bridgeEndpoint=true");
 
 
-        from("direct:getTvShow")
-                .multicast(new TvShowAggregationStrategy())
-                .parallelProcessing().enrich("direct:getTvShowData").enrich("direct:getTvShowRecommendation").end();
-
-                //.to("direct:getTvShowRecommendation", "direct:getTvShowData").end().to("direct:movieData");
-
-
         from("direct:getTvShowData")
                 .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
 //                .toD("http4://localhost:13761/api/tvShows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
-        
+
     }
 }
