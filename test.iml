@@ -30,6 +30,8 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.4.6.v20170531" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-jetty-common:2.21.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-stream:2.21.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-soap:2.21.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jaxb:2.21.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-http4:2.21.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-http-common:2.21.1" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />

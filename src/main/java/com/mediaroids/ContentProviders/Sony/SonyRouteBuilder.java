@@ -1,7 +1,11 @@
 package com.mediaroids.ContentProviders.Sony;
 
 import com.mediaroids.Movies.MovieAggregationStrategy;
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
+
+import java.util.Map;
 
 /**
  * A Camel Java DSL Router
@@ -15,36 +19,17 @@ public class SonyRouteBuilder extends RouteBuilder {
 
     public void configure() {
 
-    }
+        String WSDL = "http://localhost:9000/SonyService?wsdl";
+        String address = "http://localhost:9000/SonyService";
 
-//        restConfiguration()
-//                .host("localhost")
-//                .port(8888);
-//
-//        rest("/movies")
-//                .produces("application/json")
-//
-//                .get().to("direct:getMovies")
-//
-//                .get("/{id}").to("direct:getMovie");
-//
-//
-//        from("direct:getMovies")
-//                .to("http://localhost:13761/api/movies/?bridgeEndpoint=true");
-//
-//
-//        from("direct:getMovie")
-//                .multicast(new MovieAggregationStrategy())
-//                .parallelProcessing().enrich("direct:getMovieData").enrich("direct:getMovieRecommendation").end();
-//
-//                //.to("direct:getMovieRecommendation", "direct:getMovieData").end().to("direct:movieData");
-//
-//
-//        from("direct:getMovieData")
-//                .setBody(simple("\"{\"title\":\"Happy Gilmore\"}\""));
-////                .toD("http4://localhost:13761/api/movies/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
-//
-//        from("direct:getMovieRecommendation")
-//                .setBody(simple("{\"recommendation\":\"You should also watch my movie.\"}"));
-//    }
+        from("direct:start")
+            .to("soap:sonyWebservice?wsdlUrl=" + WSDL +"&serviceAddress=" + address + "&operationName=sendMovies")
+            .process(new Processor() {
+                @Override
+                public void process(Exchange exchange) throws Exception {
+                    Map body = (Map)exchange.getIn().getBody();
+                    System.out.println("Body: " + body);
+                }
+            });
+    }
 }

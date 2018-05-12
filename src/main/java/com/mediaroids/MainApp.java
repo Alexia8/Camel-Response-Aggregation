@@ -1,5 +1,6 @@
 package com.mediaroids;
 
+import com.mediaroids.ContentProviders.Sony.SonyRouteBuilder;
 import com.mediaroids.Movies.MovieRouteBuilder;
 import com.mediaroids.Music.MusicRouteBuilder;
 import com.mediaroids.Shared.CustomUrlRewrite;
@@ -38,6 +39,8 @@ public class MainApp {
         UserActivityRouteBuilder userActivityRouteBuilder = new UserActivityRouteBuilder();
         main.addRouteBuilder(userActivityRouteBuilder);
 
+        SonyRouteBuilder sonyRouteBuilder = new SonyRouteBuilder();
+        main.addRouteBuilder(sonyRouteBuilder);
 
         main.run(args);
     }
