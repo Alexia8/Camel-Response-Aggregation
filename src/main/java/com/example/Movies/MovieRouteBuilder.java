@@ -1,10 +1,7 @@
-package com.example;
+package com.example.Movies;
 
-import org.apache.camel.Exchange;
-import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.JndiRegistry;
-import org.apache.camel.model.rest.RestBindingMode;
 
 /**
  * A Camel Java DSL Router
@@ -47,7 +44,8 @@ public class MovieRouteBuilder extends RouteBuilder {
 
 
         from("direct:getMovieData")
-                .toD("http4://localhost:13761/api/movies/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+                .setBody(simple("\"{\"title\":\"Happy Gilmore\"}\""));
+//                .toD("http4://localhost:13761/api/movies/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
 
         from("direct:getMovieRecommendation")
                 .setBody(simple("{\"recommendation\":\"You should also watch my movie.\"}"));

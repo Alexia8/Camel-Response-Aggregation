@@ -1,6 +1,7 @@
 package com.example;
 
-import org.apache.camel.impl.DefaultCamelContext;
+import com.example.Movies.MovieRouteBuilder;
+import com.example.Movies.MoviesUrlRewrite;
 import org.apache.camel.main.Main;
 
 /**

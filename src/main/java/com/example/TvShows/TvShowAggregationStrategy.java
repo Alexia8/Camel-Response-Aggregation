@@ -1,9 +1,9 @@
-package com.example;
+package com.example.TvShows;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
-public class MovieAggregationStrategy implements AggregationStrategy {
+public class TvShowAggregationStrategy implements AggregationStrategy {
 
 
     @Override
