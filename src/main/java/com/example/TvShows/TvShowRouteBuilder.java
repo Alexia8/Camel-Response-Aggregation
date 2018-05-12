@@ -44,7 +44,7 @@ public class TvShowRouteBuilder extends RouteBuilder {
 
 
         from("direct:getTvShowData")
-                .setBody(simple("\"{\"title\":\"Happy Gilmore\"}\""));
+                .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
 //                .toD("http4://localhost:13761/api/tvShows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
 
         from("direct:getTvShowRecommendation")

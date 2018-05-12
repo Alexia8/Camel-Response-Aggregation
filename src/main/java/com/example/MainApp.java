@@ -2,6 +2,8 @@ package com.example;
 
 import com.example.Movies.MovieRouteBuilder;
 import com.example.Movies.MoviesUrlRewrite;
+import com.example.TvShows.TvShowRouteBuilder;
+import com.example.TvShows.TvShowsUrlRewrite;
 import org.apache.camel.main.Main;
 
 /**
@@ -17,6 +19,9 @@ public class MainApp {
         MovieRouteBuilder builder = new MovieRouteBuilder();
         main.bind("urlRewrite", new MoviesUrlRewrite());
         main.addRouteBuilder(builder);
+        TvShowRouteBuilder tvShowRouteBuilder = new TvShowRouteBuilder();
+        main.bind("urlRewrite", new TvShowsUrlRewrite());
+        main.addRouteBuilder(tvShowRouteBuilder);
         main.run(args);
     }
 
