@@ -1,4 +1,4 @@
-package com.example.Movies;
+package com.mediaroids.Movies;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.JndiRegistry;

@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="523ed34e-c445-4ff5-b00c-3a09242b3d2f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowAggregationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowRouteBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowsUrlRewrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicAggregationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicUrlRewrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserAggregationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserUrlRewrite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MovieAggregationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Movies/MovieAggregationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MovieRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MoviesUrlRewrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Movies/MoviesUrlRewrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Movies/MovieAggregationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Movies/MoviesUrlRewrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MoviesUrlRewrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowAggregationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowAggregationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowsUrlRewrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowsUrlRewrite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MovieAggregationStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MovieRouteBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MoviesUrlRewrite.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,44 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieRouteBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-588">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviesUrlRewrite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MoviesUrlRewrite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/MainApp.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="495">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,26 +48,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TvShowAggregationStrategy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowAggregationStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
+      <file leaf-file-name="message1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/message1.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="TvShowRouteBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowRouteBuilder.java">
+      <file leaf-file-name="message2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/message2.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UserRouteBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="660">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TvShowsUrlRewrite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowsUrlRewrite.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowsUrlRewrite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -103,14 +76,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieAggregationStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieAggregationStrategy.java">
+      <file leaf-file-name="TvShowRouteBuilder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="705">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserUrlRewrite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserUrlRewrite.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UserAggregationStrategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserAggregationStrategy.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="MusicUrlRewrite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicUrlRewrite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicAggregationStrategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicAggregationStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -124,6 +122,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Movie</find>
+      <find>Music</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>TvShow</replace>
+      <replace>Music</replace>
+      <replace>User</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -131,14 +140,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/example/MovieAggregationStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/MainApp.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/MoviesUrlRewrite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/MovieRouteBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/TvShows/MoviesUrlRewrite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowsUrlRewrite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MovieAggregationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicAggregationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/User/MusicAggregationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/User/MusicRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java" />
       </list>
     </option>
   </component>
@@ -211,7 +228,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="camel-response-aggregation" type="b2602c69:ProjectViewProjectNode" />
@@ -219,8 +236,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="Movies" type="462c0819:PsiDirectoryNode" />
+              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="camel-response-aggregation" type="b2602c69:ProjectViewProjectNode" />
@@ -228,8 +245,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
               <item name="TvShows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camel-response-aggregation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camel-response-aggregation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,12 +267,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38505748" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/mediaroids/User" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mediaroids/Music" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/TvShows" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -265,12 +303,12 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.MainApp" />
+      <option name="MAIN_CLASS_NAME" value="com.mediaroids.MainApp" />
       <module name="test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Movies.*" />
+          <option name="PATTERN" value="com.mediaroids.Movies.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -332,12 +370,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526065689364</updated>
-      <workItem from="1526126729658" duration="878000" />
+      <workItem from="1526126729658" duration="2127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="878000" />
+    <option name="totallyTimeSpent" value="2127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1003" extended-state="6" />
@@ -352,13 +390,14 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2876557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2876557" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21062271" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
       <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -370,7 +409,6 @@
       <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -385,9 +423,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/MainApp.java</url>
-          <line>14</line>
-          <properties class="com.example.MainApp" method="main">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java</url>
+          <line>16</line>
+          <properties class="com.mediaroids.MainApp" method="main">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
@@ -397,7 +435,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
@@ -414,7 +452,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MoviesUrlRewrite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MoviesUrlRewrite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
@@ -424,7 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/MainApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
@@ -434,7 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="47" column="91" lean-forward="true" selection-start-line="47" selection-start-column="91" selection-end-line="47" selection-end-column="91" />
@@ -444,7 +482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/MainApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
@@ -454,7 +492,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -479,7 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieAggregationStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -489,7 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MovieRouteBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -499,7 +537,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Movies/MoviesUrlRewrite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MoviesUrlRewrite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -509,34 +547,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/MainApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowAggregationStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicUrlRewrite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicAggregationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowsUrlRewrite.java">
+    <entry file="file://$PROJECT_DIR$/src/data/message1.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/message2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserUrlRewrite.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserAggregationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowsUrlRewrite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowRouteBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/TvShows/TvShowAggregationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="705">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
         </state>
       </provider>
     </entry>

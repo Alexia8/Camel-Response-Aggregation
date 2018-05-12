@@ -1,9 +1,9 @@
-package com.example.Movies;
+package com.mediaroids.Music;
 
 import org.apache.camel.Producer;
 import org.apache.camel.http.common.UrlRewrite;
 
-public class MoviesUrlRewrite implements UrlRewrite {
+public class MusicUrlRewrite implements UrlRewrite {
 
     @Override
     public String rewrite(String url, String relativeUrl, Producer producer) throws Exception {

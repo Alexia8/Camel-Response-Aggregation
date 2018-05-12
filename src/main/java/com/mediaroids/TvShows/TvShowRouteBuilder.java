@@ -1,4 +1,4 @@
-package com.example.TvShows;
+package com.mediaroids.TvShows;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.JndiRegistry;
@@ -46,8 +46,6 @@ public class TvShowRouteBuilder extends RouteBuilder {
         from("direct:getTvShowData")
                 .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
 //                .toD("http4://localhost:13761/api/tvShows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
-
-        from("direct:getTvShowRecommendation")
-                .setBody(simple("{\"recommendation\":\"You should also watch my movie.\"}"));
+        
     }
 }

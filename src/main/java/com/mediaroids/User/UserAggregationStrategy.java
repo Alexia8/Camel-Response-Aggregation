@@ -1,9 +1,9 @@
-package com.example.Movies;
+package com.mediaroids.User;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
-public class MovieAggregationStrategy implements AggregationStrategy {
+public class UserAggregationStrategy implements AggregationStrategy {
 
 
     @Override
