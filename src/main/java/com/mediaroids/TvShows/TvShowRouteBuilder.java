@@ -21,18 +21,21 @@ public class TvShowRouteBuilder extends RouteBuilder {
 
         rest("/tvShows")
                 .produces("application/json")
-
+                // Get from Content Layer
                 .get().to("direct:getTvShows")
-
+                // Get specific movie from Content Layer
                 .get("/{id}").to("direct:getTvShow");
+
+
 
 
         from("direct:getTvShows")
                 .to("http://localhost:13761/api/tvShows/?bridgeEndpoint=true");
 
 
-        from("direct:getTvShowData")
-                .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
+        from("direct:getTvShow")
+            .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
+        // TO ask Content Layer for Data
 //                .toD("http4://localhost:13761/api/tvShows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
 
     }
