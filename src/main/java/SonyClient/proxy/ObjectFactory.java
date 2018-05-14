@@ -24,11 +24,15 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetMovieStatsResponse_QNAME = new QName("http://SonyService/", "getMovieStatsResponse");
-    private final static QName _GetUserActivityResponse_QNAME = new QName("http://SonyService/", "getUserActivityResponse");
     private final static QName _SendMoviesResponse_QNAME = new QName("http://SonyService/", "sendMoviesResponse");
-    private final static QName _GetMovieStats_QNAME = new QName("http://SonyService/", "getMovieStats");
-    private final static QName _GetUserActivity_QNAME = new QName("http://SonyService/", "getUserActivity");
+    private final static QName _GetMovieResponse_QNAME = new QName("http://SonyService/", "getMovieResponse");
+    private final static QName _SendUserActivity_QNAME = new QName("http://SonyService/", "sendUserActivity");
+    private final static QName _SendUserActivityResponse_QNAME = new QName("http://SonyService/", "sendUserActivityResponse");
+    private final static QName _GetMovie_QNAME = new QName("http://SonyService/", "getMovie");
+    private final static QName _SendSongs_QNAME = new QName("http://SonyService/", "sendSongs");
+    private final static QName _SendSongsResponse_QNAME = new QName("http://SonyService/", "sendSongsResponse");
+    private final static QName _GetSong_QNAME = new QName("http://SonyService/", "getSong");
+    private final static QName _GetSongResponse_QNAME = new QName("http://SonyService/", "getSongResponse");
     private final static QName _SendMovies_QNAME = new QName("http://SonyService/", "sendMovies");
 
     /**
@@ -39,11 +43,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetUserActivityResponse }
+     * Create an instance of {@link GetMovieResponse }
      * 
      */
-    public GetUserActivityResponse createGetUserActivityResponse() {
-        return new GetUserActivityResponse();
+    public GetMovieResponse createGetMovieResponse() {
+        return new GetMovieResponse();
     }
 
     /**
@@ -55,27 +59,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetMovieStatsResponse }
+     * Create an instance of {@link SendUserActivity }
      * 
      */
-    public GetMovieStatsResponse createGetMovieStatsResponse() {
-        return new GetMovieStatsResponse();
+    public SendUserActivity createSendUserActivity() {
+        return new SendUserActivity();
     }
 
     /**
-     * Create an instance of {@link GetUserActivity }
+     * Create an instance of {@link SendUserActivityResponse }
      * 
      */
-    public GetUserActivity createGetUserActivity() {
-        return new GetUserActivity();
+    public SendUserActivityResponse createSendUserActivityResponse() {
+        return new SendUserActivityResponse();
     }
 
     /**
-     * Create an instance of {@link GetMovieStats }
+     * Create an instance of {@link SendSongs }
      * 
      */
-    public GetMovieStats createGetMovieStats() {
-        return new GetMovieStats();
+    public SendSongs createSendSongs() {
+        return new SendSongs();
+    }
+
+    /**
+     * Create an instance of {@link GetMovie }
+     * 
+     */
+    public GetMovie createGetMovie() {
+        return new GetMovie();
     }
 
     /**
@@ -87,6 +99,38 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetSong }
+     * 
+     */
+    public GetSong createGetSong() {
+        return new GetSong();
+    }
+
+    /**
+     * Create an instance of {@link GetSongResponse }
+     * 
+     */
+    public GetSongResponse createGetSongResponse() {
+        return new GetSongResponse();
+    }
+
+    /**
+     * Create an instance of {@link SendSongsResponse }
+     * 
+     */
+    public SendSongsResponse createSendSongsResponse() {
+        return new SendSongsResponse();
+    }
+
+    /**
+     * Create an instance of {@link Song }
+     * 
+     */
+    public Song createSong() {
+        return new Song();
+    }
+
+    /**
      * Create an instance of {@link Movie }
      * 
      */
@@ -95,21 +139,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetMovieStatsResponse }{@code >}}
+     * Create an instance of {@link UserActivity }
      * 
      */
-    @XmlElementDecl(namespace = "http://SonyService/", name = "getMovieStatsResponse")
-    public JAXBElement<GetMovieStatsResponse> createGetMovieStatsResponse(GetMovieStatsResponse value) {
-        return new JAXBElement<GetMovieStatsResponse>(_GetMovieStatsResponse_QNAME, GetMovieStatsResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetUserActivityResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://SonyService/", name = "getUserActivityResponse")
-    public JAXBElement<GetUserActivityResponse> createGetUserActivityResponse(GetUserActivityResponse value) {
-        return new JAXBElement<GetUserActivityResponse>(_GetUserActivityResponse_QNAME, GetUserActivityResponse.class, null, value);
+    public UserActivity createUserActivity() {
+        return new UserActivity();
     }
 
     /**
@@ -122,21 +156,75 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetMovieStats }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetMovieResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://SonyService/", name = "getMovieStats")
-    public JAXBElement<GetMovieStats> createGetMovieStats(GetMovieStats value) {
-        return new JAXBElement<GetMovieStats>(_GetMovieStats_QNAME, GetMovieStats.class, null, value);
+    @XmlElementDecl(namespace = "http://SonyService/", name = "getMovieResponse")
+    public JAXBElement<GetMovieResponse> createGetMovieResponse(GetMovieResponse value) {
+        return new JAXBElement<GetMovieResponse>(_GetMovieResponse_QNAME, GetMovieResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetUserActivity }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link SendUserActivity }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://SonyService/", name = "getUserActivity")
-    public JAXBElement<GetUserActivity> createGetUserActivity(GetUserActivity value) {
-        return new JAXBElement<GetUserActivity>(_GetUserActivity_QNAME, GetUserActivity.class, null, value);
+    @XmlElementDecl(namespace = "http://SonyService/", name = "sendUserActivity")
+    public JAXBElement<SendUserActivity> createSendUserActivity(SendUserActivity value) {
+        return new JAXBElement<SendUserActivity>(_SendUserActivity_QNAME, SendUserActivity.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SendUserActivityResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SonyService/", name = "sendUserActivityResponse")
+    public JAXBElement<SendUserActivityResponse> createSendUserActivityResponse(SendUserActivityResponse value) {
+        return new JAXBElement<SendUserActivityResponse>(_SendUserActivityResponse_QNAME, SendUserActivityResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetMovie }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SonyService/", name = "getMovie")
+    public JAXBElement<GetMovie> createGetMovie(GetMovie value) {
+        return new JAXBElement<GetMovie>(_GetMovie_QNAME, GetMovie.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SendSongs }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SonyService/", name = "sendSongs")
+    public JAXBElement<SendSongs> createSendSongs(SendSongs value) {
+        return new JAXBElement<SendSongs>(_SendSongs_QNAME, SendSongs.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SendSongsResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SonyService/", name = "sendSongsResponse")
+    public JAXBElement<SendSongsResponse> createSendSongsResponse(SendSongsResponse value) {
+        return new JAXBElement<SendSongsResponse>(_SendSongsResponse_QNAME, SendSongsResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetSong }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SonyService/", name = "getSong")
+    public JAXBElement<GetSong> createGetSong(GetSong value) {
+        return new JAXBElement<GetSong>(_GetSong_QNAME, GetSong.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetSongResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://SonyService/", name = "getSongResponse")
+    public JAXBElement<GetSongResponse> createGetSongResponse(GetSongResponse value) {
+        return new JAXBElement<GetSongResponse>(_GetSongResponse_QNAME, GetSongResponse.class, null, value);
     }
 
     /**

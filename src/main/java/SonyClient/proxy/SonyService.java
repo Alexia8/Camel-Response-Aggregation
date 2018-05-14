@@ -1,6 +1,7 @@
 
 package SonyClient.proxy;
 
+import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -26,41 +27,68 @@ public interface SonyService {
 
     /**
      * 
-     * @param studentId
-     * @param classId
-     */
-    @WebMethod
-    @RequestWrapper(localName = "getMovieStats", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetMovieStats")
-    @ResponseWrapper(localName = "getMovieStatsResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetMovieStatsResponse")
-    @Action(input = "http://SonyService/SonyService/getMovieStatsRequest", output = "http://SonyService/SonyService/getMovieStatsResponse")
-    public void getMovieStats(
-        @WebParam(name = "studentId", targetNamespace = "")
-        int studentId,
-        @WebParam(name = "classId", targetNamespace = "")
-        int classId);
-
-    /**
-     * 
-     * @param contentReceiver
+     * @param id
      * @return
      *     returns SonyClient.proxy.Movie
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "sendMovies", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendMovies")
-    @ResponseWrapper(localName = "sendMoviesResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendMoviesResponse")
-    @Action(input = "http://SonyService/SonyService/sendMoviesRequest", output = "http://SonyService/SonyService/sendMoviesResponse")
-    public Movie sendMovies(
-        @WebParam(name = "content_receiver", targetNamespace = "")
-        String contentReceiver);
+    @RequestWrapper(localName = "getMovie", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetMovie")
+    @ResponseWrapper(localName = "getMovieResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetMovieResponse")
+    @Action(input = "http://SonyService/SonyService/getMovieRequest", output = "http://SonyService/SonyService/getMovieResponse")
+    public Movie getMovie(
+        @WebParam(name = "Id", targetNamespace = "")
+        int id);
 
     /**
      * 
+     * @param id
+     * @return
+     *     returns SonyClient.proxy.Song
      */
     @WebMethod
-    @RequestWrapper(localName = "getUserActivity", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetUserActivity")
-    @ResponseWrapper(localName = "getUserActivityResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetUserActivityResponse")
-    @Action(input = "http://SonyService/SonyService/getUserActivityRequest", output = "http://SonyService/SonyService/getUserActivityResponse")
-    public void getUserActivity();
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getSong", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetSong")
+    @ResponseWrapper(localName = "getSongResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.GetSongResponse")
+    @Action(input = "http://SonyService/SonyService/getSongRequest", output = "http://SonyService/SonyService/getSongResponse")
+    public Song getSong(
+        @WebParam(name = "Id", targetNamespace = "")
+        int id);
+
+    /**
+     * 
+     * @param movie_0020List
+     */
+    @WebMethod
+    @RequestWrapper(localName = "sendMovies", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendMovies")
+    @ResponseWrapper(localName = "sendMoviesResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendMoviesResponse")
+    @Action(input = "http://SonyService/SonyService/sendMoviesRequest", output = "http://SonyService/SonyService/sendMoviesResponse")
+    public void sendMovies(
+        @WebParam(name = "Movie List", targetNamespace = "")
+        List<Movie> movie_0020List);
+
+    /**
+     * 
+     * @param songJava_0020List
+     */
+    @WebMethod
+    @RequestWrapper(localName = "sendSongs", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendSongs")
+    @ResponseWrapper(localName = "sendSongsResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendSongsResponse")
+    @Action(input = "http://SonyService/SonyService/sendSongsRequest", output = "http://SonyService/SonyService/sendSongsResponse")
+    public void sendSongs(
+        @WebParam(name = "Song.java List", targetNamespace = "")
+        List<Song> songJava_0020List);
+
+    /**
+     * 
+     * @param user_0020Activity_0020List
+     */
+    @WebMethod
+    @RequestWrapper(localName = "sendUserActivity", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendUserActivity")
+    @ResponseWrapper(localName = "sendUserActivityResponse", targetNamespace = "http://SonyService/", className = "SonyClient.proxy.SendUserActivityResponse")
+    @Action(input = "http://SonyService/SonyService/sendUserActivityRequest", output = "http://SonyService/SonyService/sendUserActivityResponse")
+    public void sendUserActivity(
+        @WebParam(name = "User Activity List", targetNamespace = "")
+        List<UserActivity> user_0020Activity_0020List);
 
 }

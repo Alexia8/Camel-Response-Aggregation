@@ -7,12 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for sendMoviesResponse complex type.
+ * <p>Java class for sendSongsResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="sendMoviesResponse">
+ * &lt;complexType name="sendSongsResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -25,8 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "sendMoviesResponse")
-public class SendMoviesResponse {
+@XmlType(name = "sendSongsResponse")
+public class SendSongsResponse {
 
 
 }
