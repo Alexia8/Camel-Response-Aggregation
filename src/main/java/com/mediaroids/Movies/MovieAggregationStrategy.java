@@ -1,4 +1,4 @@
-package com.example;
+package com.mediaroids.Movies;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
