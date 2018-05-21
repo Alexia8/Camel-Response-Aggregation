@@ -27,7 +27,7 @@ public class UserRouteBuilder extends RouteBuilder {
 
 
         from("direct:getUsers")
-                .to("http://localhost:13761/api/users/?bridgeEndpoint=true");
+                .to("http://localhost:8080/users/");
 
 
         from("direct:getUserData")

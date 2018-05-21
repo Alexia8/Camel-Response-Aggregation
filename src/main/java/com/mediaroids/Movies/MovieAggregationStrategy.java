@@ -13,6 +13,10 @@ public class MovieAggregationStrategy implements AggregationStrategy {
             return newExchange;
         }
 
+        if(newExchange.getIn().getBody(String.class).isEmpty())
+            return oldExchange;
+
+
         String oldBody = oldExchange.getIn().getBody(String.class);
         String newBody = newExchange.getIn().getBody(String.class);
 

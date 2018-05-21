@@ -17,7 +17,7 @@ public class SonyRouteBuilder extends RouteBuilder {
 
     public void configure() {
 
-        SonyService service = new SonyServiceService().getSonyServicePort();
+  //      SonyService service = new SonyServiceService().getSonyServicePort();
 
         restConfiguration()
             .host("localhost")
@@ -29,7 +29,7 @@ public class SonyRouteBuilder extends RouteBuilder {
             .get("/{id}").to("direct:getFromSony");
 
 
-        from("queue:sonyActivity")
+        from("seda:sonyActivity")
             .process(new Processor() {
                 @Override
                 public void process(Exchange exchange) throws Exception {

@@ -58,12 +58,9 @@ public class UserActivityRouteBuilder extends RouteBuilder {
                 .log("${body}")
                 .choice()
                     .when(body().contains(true))
-                        .to("queue:sonyActivity")
+                        .to("seda:sonyActivity")
                     .otherwise()
                         .to("stream:out");
 
-//                .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
-//                .toD("http4://localhost:13761/api/userActivities/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
-        
     }
 }
