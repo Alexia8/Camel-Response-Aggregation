@@ -4,18 +4,9 @@
     <list default="true" id="523ed34e-c445-4ff5-b00c-3a09242b3d2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/message1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/message1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/message2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/message2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SonyClient/SonyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SonyClient/SonyClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/CustomUrlRewrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/CustomUrlRewrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/DatabaseConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
     </list>
@@ -41,8 +32,8 @@
       <file leaf-file-name="MovieRouteBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+            <state relative-caret-position="850">
+              <caret line="57" column="107" selection-start-line="52" selection-start-column="9" selection-end-line="57" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,38 +41,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieAggregationStrategy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java">
+      <file leaf-file-name="TvShowRouteBuilder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="424">
+              <caret line="47" column="99" selection-start-line="43" selection-start-column="6" selection-end-line="47" selection-end-column="99" />
+              <folding>
+                <marker date="1526659312559" expanded="true" signature="1858:1864" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/Movie.java">
+      <file leaf-file-name="SonyRouteBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="918">
+              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomUrlRewrite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/CustomUrlRewrite.java">
+      <file leaf-file-name="UserActivityRouteBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="935">
+              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -106,6 +91,9 @@
       <find>queue</find>
       <find>queue:</find>
       <find>localhost:8888</find>
+      <find>se</find>
+      <find>activemq</find>
+      <find>bean</find>
     </findStrings>
     <replaceStrings>
       <replace>TvShow</replace>
@@ -141,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/User/UserRouteBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/SonyClient/SonyClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/DatabaseConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java" />
         <option value="$PROJECT_DIR$/target/generated-sources/joltProcessors/ContentAppToNetflixShowProcessor.json" />
         <option value="$PROJECT_DIR$/target/classes/com/mediaroids/joltProcessors/ContentAppToNetflixShowProcessor.json" />
         <option value="$PROJECT_DIR$/data/joltProcessors/ContentAppToNetflixShowProcessor.json" />
@@ -149,12 +136,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/CustomUrlRewrite.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/Movie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java" />
       </list>
     </option>
   </component>
@@ -186,16 +174,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="1003" />
+    <option name="x" value="-1608" />
+    <option name="y" value="72" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,12 +196,6 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="joltProcessors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -265,25 +248,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
-              <item name="Music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
-              <item name="Shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
               <item name="TvShows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediaroids" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -299,14 +273,22 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SonyClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,23 +302,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Univ\KEA\SI_STUFF\test" />
-      <recent name="D:\Univ\KEA\SI_STUFF\test\src\data" />
-      <recent name="D:\Univ\KEA\SI_STUFF\test\src\main\java" />
-      <recent name="D:\Univ\KEA\SI_STUFF\test\src\joltProcessors" />
-      <recent name="D:\Univ\KEA\SI_STUFF\test\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mediaroids.ContentProviders.Sony" />
-      <recent name="com.mediaroids.Shared" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Univ\KEA\SI_STUFF\test\target\classes\com\mediaroids" />
       <recent name="D:\Univ\KEA\SI_STUFF\test\target\generated-sources" />
       <recent name="D:\Univ\KEA\SI_STUFF\test\target" />
       <recent name="D:\Univ\KEA\SI_STUFF\test\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mediaroids.ContentProviders.Sony" />
+      <recent name="com.mediaroids.Shared" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Univ\KEA\SI_STUFF\test" />
+      <recent name="D:\Univ\KEA\SI_STUFF\test\src\data" />
+      <recent name="D:\Univ\KEA\SI_STUFF\test\src\main\java" />
+      <recent name="D:\Univ\KEA\SI_STUFF\test\src\joltProcessors" />
+      <recent name="D:\Univ\KEA\SI_STUFF\test\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,48 +423,50 @@
       <workItem from="1526740405693" duration="901000" />
       <workItem from="1526743161988" duration="2007000" />
       <workItem from="1526837270141" duration="606000" />
-      <workItem from="1526898520731" duration="8684000" />
+      <workItem from="1526898520731" duration="9305000" />
+      <workItem from="1526909132687" duration="3151000" />
+      <workItem from="1526972833603" duration="5416000" />
+      <workItem from="1527011746354" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42827000" />
+    <option name="totallyTimeSpent" value="52252000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1608" y="72" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32943678" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50104165" side_tool="true" weight="0.32943678" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" weight="0.32943678" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32943678" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3296875" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,27 +524,6 @@
     <entry file="file://$PROJECT_DIR$/joltProcessors/ContentAppToNetflixShowProcessor.json" />
     <entry file="file://$PROJECT_DIR$/joltProcessors/NetflixToContentAppSongProcessor.json" />
     <entry file="file://$PROJECT_DIR$/joltProcessors/NetflixToContentAppShowProcessor.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/SonyClient/proxy/SonyServiceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SonyClient/SonyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SonyClient/proxy/SonyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/DatabaseConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -587,16 +550,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/ExceptionRouteBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="40" selection-start-line="40" selection-end-line="41" />
-          <folding>
-            <marker date="1526659312559" expanded="true" signature="1858:1864" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Music/MusicRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -604,27 +557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="e#841#1051#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-http-common/2.21.1/camel-http-common-2.21.1.jar!/org/apache/camel/http/common/HttpHelper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6494">
           <caret line="413" selection-start-line="413" selection-end-line="413" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
@@ -642,23 +578,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/CustomUrlRewrite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="646">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
@@ -670,20 +592,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SonyClient/SonyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SonyClient/proxy/SonyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Shared/CustomUrlRewrite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SonyClient/proxy/SonyServiceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="83" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/ContentProviders/Sony/SonyRouteBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/UserActivity/UserActivityRouteBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+        <state relative-caret-position="850">
+          <caret line="57" column="107" selection-start-line="52" selection-start-column="9" selection-end-line="57" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/Movies/MovieAggregationStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mediaroids/TvShows/TvShowRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="424">
+          <caret line="47" column="99" selection-start-line="43" selection-start-column="6" selection-end-line="47" selection-end-column="99" />
+          <folding>
+            <marker date="1526659312559" expanded="true" signature="1858:1864" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
