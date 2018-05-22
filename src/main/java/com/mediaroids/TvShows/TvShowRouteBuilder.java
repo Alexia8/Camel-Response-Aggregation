@@ -25,6 +25,12 @@ public class TvShowRouteBuilder extends RouteBuilder {
                 .port(8888);
 
 
+        /**
+         * Endpoints:
+         * @GET {/shows/all} - sends all shows in the DB to `getTvShows` Queue
+         * @GET {/shows/id} -  sends a single movie and its data to `getTvShow` Queue
+         * @POST {/shows/add} - receives a list of TvShows from Sony, add the list to `addShow` Queue
+         */
         rest("/shows")
                 .produces("application/json")
                 // Get from Content Layer
@@ -34,25 +40,33 @@ public class TvShowRouteBuilder extends RouteBuilder {
                 // Add new show to Content Layer
                 .post("/add").to("direct:addShow");
 
+
+        /**
+         * @queue {getMovies}
+         * @return List<TvShows> - list of all TvShows from TV Show Microservice
+         */
         from("direct:getTvShows")
                 .doTry()
                     .to("http://localhost:8080/shows/all?bridgeEndpoint=true&urlRewrire=#urlRewrite")
                 .doCatch(Exception.class)
                     .setBody(simple("[{\"title\":\"Error.\", \"description\":\"An error occurred.\"}]"));
-        ;
 
+
+        /**
+         * @return {TvShow} returns an individual TV Show from the TV Show Microservice
+         */
         from("direct:getTvShow")
            .doTry()
                 .toD("http://localhost:8080/shows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite")
            .doCatch(Exception.class)
                 .setBody(simple("{\"title\":\"Error.\", \"description\":\"An error occurred.\"}"));
 
+        /**
+         * @queue {addShow} - sends TV Show to TvShows Microservice
+         */
+
         from("direct:addShow")
                 .to("http://localhost:8080/shows/add?bridgeEndpoint=true&urlRewrite=#urlRewrite");
-
-
-        from("direct:transformMovie")
-                .to("jolt:file:data/joltProcessors/ContentAppToNetflixShowProcessor.json");
 
 
     }
