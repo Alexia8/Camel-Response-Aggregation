@@ -25,6 +25,10 @@ public class UserActivityRouteBuilder extends RouteBuilder {
                 .host("localhost")
                 .port(8888);
 
+        /**
+         * Endpoints:
+         * @GET {/userActivities} - sends all movies in the DB to `getUserActivities` Queue
+         */
         rest("/userActivities")
             .produces("application/json")
             .get().to("direct:getUserActivities")
@@ -33,10 +37,19 @@ public class UserActivityRouteBuilder extends RouteBuilder {
             .get("/{id}").to("direct:getUserActivity");
 
 
+        /**
+         * @queue {getUserActivities} gets all of the userActivities in the DB
+         */
         from("direct:getUserActivities")
                 .to("http://localhost:13761/api/userActivities/?bridgeEndpoint=true");
 
 
+        /**
+         * @queue {createUserActivityData}
+         * @return sends UserActivityData to `sonyActivity` Queue
+         *
+         * Sony then reads this queue, and will ingest the data at their liking
+         */
         from("direct:createUserActivityData")
                 .process(new Processor() {
                     @Override
