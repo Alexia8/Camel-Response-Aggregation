@@ -54,11 +54,11 @@ public class UserActivityRouteBuilder extends RouteBuilder {
                         consumer.stop();
                     }
                 })
-                .bean(UserActivityDAO.class, "insertUserActivity(${userId}, ${contentId}, ${contentType}, ${actionType})")
+                .bean(UserActivityDAO.class, "insertUserActivity(${body.userId}, ${body.contentId}, ${body.contentType}, ${body.actionType})")
                 .log("${body}")
                 .choice()
-                    .when(body().contains(true))
-                        .to("seda:sonyActivity")
+                    .when(body().isNotEqualTo(""))
+                        .to("direct:sonyActivity")
                     .otherwise()
                         .to("stream:out");
 

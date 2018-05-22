@@ -64,6 +64,7 @@ public class MovieRouteBuilder extends RouteBuilder {
         /**
          * @returns [Movies] - recommendation list
          */
+
         from("direct:getMovieRecommendation")
                 .doTry()
                 .toD("http://localhost:8080/movies/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite")
