@@ -17,28 +17,38 @@ public class MusicRouteBuilder extends RouteBuilder {
                 .host("localhost")
                 .port(8888);
 
-        rest("/musics")
+        rest("/music")
                 .produces("application/json")
 
-                .get().to("direct:getMusics")
+                .get("/all").to("direct:getSongs")
 
-                .get("/{id}").to("direct:getMusic");
+                .get("/{id}").to("direct:getMusic")
+
+                .post("/add").to("direct:addSong");
 
 
         /**
          * @returns List<Music> items
          */
-        from("direct:getMusics")
-                .to("http://localhost:13761/api/musics/?bridgeEndpoint=true");
-
+        from("direct:getSongs")
+                .doTry()
+                    .to("http://localhost:8080/music/?bridgeEndpoint=true&urlRewrire=#urlRewruite")
+                .doCatch(Exception.class)
+                    .setBody(simple("[{\"title\":\"Error.\", \"description\":\"Could not fetch any song.\"}]"));
 
         /**
          * @param id - for music item
          * @returns Music object
          */
-        from("direct:getMusicData")
-                .setBody(simple("\"{\"title\":\"Back in Black\"}\""));
-//                .toD("http4://localhost:13761/api/musics/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+        from("direct:getMusic")
+                .doTry()
+                    .toD("http4://localhost:8080/music/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite")
+                .doCatch(Exception.class)
+                    .setBody(simple("{\"title\":\"Error.\", \"description\":\"Could not fetch the song.\"}"));
+
+
+        from("direct:addSong")
+                .to("http://localhost:8080/songs/add?bridgeEndpoint=true&urlRewrite=#urlRewrite");
 
 
     }

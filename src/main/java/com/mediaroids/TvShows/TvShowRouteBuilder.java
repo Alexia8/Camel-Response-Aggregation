@@ -1,8 +1,13 @@
 package com.mediaroids.TvShows;
 
 import com.mediaroids.Shared.CustomUrlRewrite;
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.JndiRegistry;
+
+import java.net.ConnectException;
+import java.sql.SQLOutput;
 
 /**
  * A Camel Java DSL Router
@@ -19,24 +24,36 @@ public class TvShowRouteBuilder extends RouteBuilder {
                 .host("localhost")
                 .port(8888);
 
-        rest("/tvShows")
+
+        rest("/shows")
                 .produces("application/json")
                 // Get from Content Layer
-                .get().to("direct:getTvShows")
+                .get("/all").to("direct:getTvShows")
                 // Get specific movie from Content Layer
-                .get("/{id}").to("direct:getTvShow");
-
-
-
+                .get("/{id}").to("direct:getTvShow")
+                // Add new show to Content Layer
+                .post("/add").to("direct:addShow");
 
         from("direct:getTvShows")
-                .to("http://localhost:13761/api/tvShows/?bridgeEndpoint=true");
-
+                .doTry()
+                    .to("http://localhost:8080/shows/all?bridgeEndpoint=true&urlRewrire=#urlRewrite")
+                .doCatch(Exception.class)
+                    .setBody(simple("[{\"title\":\"Error.\", \"description\":\"An error occurred.\"}]"));
+        ;
 
         from("direct:getTvShow")
-            .setBody(simple("{\"title\":\"The Big Bang Theory\"}"));
-        // TO ask Content Layer for Data
-//                .toD("http4://localhost:13761/api/tvShows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+           .doTry()
+                .toD("http://localhost:8080/shows/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite")
+           .doCatch(Exception.class)
+                .setBody(simple("{\"title\":\"Error.\", \"description\":\"An error occurred.\"}"));
+
+        from("direct:addShow")
+                .to("http://localhost:8080/shows/add?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+
+
+        from("direct:transformMovie")
+                .to("jolt:file:data/joltProcessors/ContentAppToNetflixShowProcessor.json");
+
 
     }
 }

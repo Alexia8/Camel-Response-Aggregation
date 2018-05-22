@@ -1,0 +1,12 @@
+[
+  {
+  "operation":"shift",
+  "spec": {
+    "*":
+      {
+        "posterUrl": "imageUrl",
+        "fileUrl": "videoUrl"
+      }
+          }
+  }
+]
