@@ -26,6 +26,13 @@ public class MovieRouteBuilder extends RouteBuilder {
                 .port(8888);
 
         // Rest API
+
+        /**
+         * Endpoints:
+         * @GET {/movies/all} - sends all movies in the DB to `getMovies` Queue
+         * @GET {/movies/id} -  sends a single movie and its data to `getMovieData` Queue
+         * @POST {/movies/add} - receives a list of movies from Sony, add the list to `addMovie` Queue
+         */
         rest("/movies")
                 .produces("application/json")
 
@@ -38,6 +45,7 @@ public class MovieRouteBuilder extends RouteBuilder {
 
 
         /**
+         * @queue {getMovies}
          * @return List<Movie> - list of all movies
          */
         from("direct:getMovies")
@@ -47,6 +55,10 @@ public class MovieRouteBuilder extends RouteBuilder {
                 .setBody(simple("[{\"title\":\"Error.\", \"description\":\"An error occurred.\"}]"));
 
         /**
+         * 1. Sends movie to getMovie Queue
+         * 2. Sends movie to getMovieRecommendation Queue which the AI movie recommendation service will read
+         *
+         * @queue {getMovieData}
          * @returns {Movie}
          */
 
@@ -58,6 +70,9 @@ public class MovieRouteBuilder extends RouteBuilder {
                 .setBody(simple("{\"title\":\"Error.\", \"description\":\"Could not fetch the movie.\"}"));
 
 
+        /**
+         * @queue {getMovie} - gets movie by ID from Movies Microservice
+         */
         from("direct:getMovie")
                 .toD("http://localhost:8080/movies/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
 
@@ -87,6 +102,9 @@ public class MovieRouteBuilder extends RouteBuilder {
                     .setBody(simple("[{\"title\":\"Error.\", \"description\":\"Could not fetch the recommendations\"}]"));
 
 
+        /**
+         * @queue {addMovie} - sends Movie to Movies Microservice
+         */
         from("direct:addMovie")
                 .doTry()
                 .to("http://localhost:8080/movies/add?bridgeEndpoint=true&urlRewrite=#urlRewrite")
