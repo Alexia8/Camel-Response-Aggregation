@@ -17,6 +17,12 @@ public class MusicRouteBuilder extends RouteBuilder {
                 .host("localhost")
                 .port(8888);
 
+        /**
+         * Endpoints:
+         * @GET {/music/all} - sends all music in the DB to `getSongs` Queue
+         * @GET {/music/id} -  sends a single movie and its data to `getMusic` Queue
+         * @POST {/music/add} - receives a list of music from Sony, add the list to `addSong` Queue
+         */
         rest("/music")
                 .produces("application/json")
 
@@ -28,6 +34,7 @@ public class MusicRouteBuilder extends RouteBuilder {
 
 
         /**
+         * @queue {getSongs}
          * @returns List<Music> items
          */
         from("direct:getSongs")
@@ -47,6 +54,9 @@ public class MusicRouteBuilder extends RouteBuilder {
                     .setBody(simple("{\"title\":\"Error.\", \"description\":\"Could not fetch the song.\"}"));
 
 
+        /**
+         * @queue {addSong} - sends Song to Music Microservice
+         */
         from("direct:addSong")
                 .to("http://localhost:8080/songs/add?bridgeEndpoint=true&urlRewrite=#urlRewrite");
 
