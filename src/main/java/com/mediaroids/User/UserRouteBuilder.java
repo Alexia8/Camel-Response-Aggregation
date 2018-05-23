@@ -23,7 +23,11 @@ public class UserRouteBuilder extends RouteBuilder {
 
                 .get().to("direct:getUsers")
 
-                .get("/{id}").to("direct:getUser");
+                .get("/{id}").to("direct:getUser")
+
+                .get("/{username}/{password}").to("direct:login")
+
+                .post("/add").to("direct:register");
 
 
         from("direct:getUsers")
@@ -33,6 +37,13 @@ public class UserRouteBuilder extends RouteBuilder {
         from("direct:getUserData")
                 .setBody(simple("\"{\"name\":\"Stormy Daniels\"}\""));
 //                .toD("http4://localhost:13761/api/users/${header.id}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+
+        from("direct:login")
+                .toD("http://localhost:8080/users/${header.username}/${header.password}?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+
+        from("direct:register")
+                .toD("http://localhost:8080/users/add?bridgeEndpoint=true&urlRewrite=#urlRewrite");
+
 
     }
 }
